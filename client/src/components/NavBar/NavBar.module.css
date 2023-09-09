@@ -1,0 +1,260 @@
+.separador {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarDiv {
+    height: 400px;
+    width: 100%;
+}
+
+/* Henry Pokemons h1 */
+
+.henryPokemonsDiv {
+    height: 100px;
+    width: 600px;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid greenyellow;
+    border-radius: 16px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    top: 30px;
+}
+
+.henryPokemonsDiv h1 {
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.henryPokemonsDiv h1::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 5px;
+    background-color: greenyellow;
+    top: 100%;
+    left: 10%;
+}
+
+.henryPokemonsDiv button {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 16px;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.henryPokemonsDiv button a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* search and filters */
+
+.searchAndFilters {
+    height: 300px;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.182);
+    border-radius: 16px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    width: 70%;
+    margin: auto;
+}
+
+/* Filters */
+
+.filtrosYordenDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.filtrosDiv {
+    height: 250px;
+    width: 290px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtrosDiv h2 {
+    font-size: 28px;
+}
+
+.ordenDiv {
+    width: 290px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordenDiv h2 {
+    font-size: 24px;
+}
+
+/* Estilos de botones */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+}
+
+.buttonActive {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: yellow;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid rgb(157, 244, 255);
+}
+
+/* SUBMIT BUTTONS */
+
+.submitButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(103, 103, 103, 0.222);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 16px;
+}
+
+.submitButtons button {
+    border: 1px solid yellow;
+    padding: 8px;
+    background-color: black;
+    border-radius: 16px;
+    color: yellow;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+
+.dropDown {
+    position: relative;
+    width: 250px;
+}
+
+.dropDown::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid black;
+    right: 20px;
+    top: 10px;
+    z-index: 1000;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropDown.active::before {
+    transform: rotate(-225deg);
+    top: 15px;
+}
+
+.dropDown input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 16px;
+    font-size: 17px;
+}
+
+.dropDown .option {
+    position: absolute;
+    top: 50px;
+    left: -37px;
+    width: 130%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid yellow;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.dropDown.active .option {
+    display:flex;
+}
+
+.dropDown .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: yellow;
+    font-size: 15px;
+    width: 80.75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.dropDown .option div:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

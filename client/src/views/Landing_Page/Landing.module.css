@@ -1,0 +1,85 @@
+.landingDiv {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../../assets/background_landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iniciarContainer{
+    width: 40%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation{
+    height: 140%;
+    width: 80%;
+    background-color: #D9E021;
+    border-radius: 90px;
+    margin: auto;
+    padding: 30px;
+    font-size: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 3px solid #000000;
+}
+
+.divIniciar{
+    height: 300px;
+    width: 60%;
+    background-color: #D9E021;
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+    border: 3px solid #000000;
+}
+
+.divIniciar button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.divIniciar button::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    transition: 0.6s;
+    border-radius: 16px;
+}
+
+.divIniciar button:hover::before {
+    width: 100%; 
+}
+
+.divIniciar button a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: rgb(255, 245, 130);
+    padding: 10px 0 10px 0;
+    border-radius: 90px;
+    border: 2px solid black;
+}
+
+.socialMedia img {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}

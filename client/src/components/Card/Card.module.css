@@ -1,0 +1,146 @@
+.divCard {
+    max-height: 410px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 18px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 16px;
+    max-width: 330px;
+    align-items: center;
+    box-shadow: 10px 4px 1px rgba(0, 0, 0, 0.462)
+}
+
+/* Henry Pokemons h1 */
+
+.divH1HenryPokemons {
+    height: 100%;
+    width: 100%;
+    color: yellow;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 14px;
+}
+
+.divH1HenryPokemons::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    top: 100%;
+    left: 10%;
+    background-color: yellow;
+}
+
+/* NAME */
+
+.divName {
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    font-family: 'Prompt', sans-serif;
+    text-transform: capitalize;
+    background-color: rgba(170, 170, 170, 0.199);
+}
+
+/* image */
+
+.divImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.divImg::before {
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 70%;
+    background-color: #8CC63F;
+    top: 5%;
+    left: 22%;
+    border-radius: 50%;
+    transition: 1.3s;
+}
+
+.divImg::after {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    background-color: #1c1e1b4e;
+    top: 13%;
+    left: 35%;
+    border-radius: 50%;
+    transition: 1.3s;
+}
+
+.imgpoke {
+    height: 200px;
+    width: 200px;
+    z-index: 20;
+    margin-right: 9px;
+    transition: 1.3s;
+    position: relative;
+}
+
+.divImg:hover::before {
+    transform: translate(10px, 10px);
+    height: 85%;
+    width: 65%;
+}
+
+.divImg:hover::after {
+    transform: translate(10px, 10px);
+    height: 65%;
+    width: 55%;
+}
+
+.divImg:hover img {
+    transform: translate(-10px, -10px);
+}
+
+/* info */
+
+.typesAndInfo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 14px;
+}
+
+.types {
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 16px;
+    width: 80%;
+}
+
+.types h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.infoButtonDiv button {
+    background-color: transparent;
+    border: none;
+}
+
+.infoButtonDiv button a {
+    text-decoration: none;
+}
+
+.infoButtonDiv button a h5 {
+    font-size: 20px;
+    color: white;
+}

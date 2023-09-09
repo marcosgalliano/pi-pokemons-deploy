@@ -1,0 +1,92 @@
+.searchBarAndCreateButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBarDiv {
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 6px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.button:hover h2 {
+    color: black;
+}
+
+.button h2 {
+    color: white;
+    transition: 0.4s;
+}
+
+.button h2 {
+    font-size: 20px;
+}
+
+.searchBarDiv input {
+    width: 60%;
+    margin-right: 10px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    font-size: 23px;
+    padding: 10px;
+}
+
+.crearButtonDiv {
+    background-color: black;
+    width: 260px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.crearButtonDiv a {
+    background-color: transparent;
+    border: 1px solid yellow;
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.crearButtonDiv a:hover {
+    background-color: white;
+}
+
+.crearButtonDiv a:hover button {
+    color: black;
+}
+
+.crearButtonDiv button {
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

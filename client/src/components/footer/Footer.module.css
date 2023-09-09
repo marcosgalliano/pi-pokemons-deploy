@@ -1,0 +1,18 @@
+.footerDiv{
+    background-color: black;
+    padding: 20px;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerDiv h3{
+    width: 70%;
+}
+
+.footerDiv h1{
+    align-self: center;
+    margin: auto;
+}

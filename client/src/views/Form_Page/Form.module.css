@@ -1,0 +1,118 @@
+.containerForm{
+    padding: 0;
+    margin: auto;
+}
+
+.ndContainerForm{
+    width: 80%;
+    height: 700px;
+    background-color:rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 16px;
+}
+
+.divCreaTuPokemon{
+    height: 70px;
+    width: 600px;
+    background-color: black;
+    color: white;
+    margin: 30px auto 30px auto;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border: 2px solid white;
+}
+
+.divForm{
+    display: flex;
+    height: 700px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+}
+
+/* IMAGEN */
+
+.cargaOimagen{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+}
+
+/* Iform */
+
+.form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+}
+
+.form label input{
+    width: 400px;
+    height: 30px;
+    border-radius: 16px;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+/* TYPES */
+
+.typesDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.167);
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.typesDiv label{
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 7px 4px 7px 4px;
+}
+
+.typesDiv label input[type="checkbox"] {
+    width: 15px; 
+    height: 15px; 
+    margin-left: 4px;
+}
+
+/* SUBMIT */
+
+.submitDiv button{
+    padding: 15px;
+    border: 1px solid yellow;
+    border-radius: 16px;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.submitDiv button:disabled{
+    cursor: not-allowed;
+}
+
+/* ERRORES */
+
+.error{
+    color: red;
+    font-size: 17px;
+    margin-left: 10px;
+}
