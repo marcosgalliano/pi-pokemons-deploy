@@ -4,6 +4,8 @@ import { Home, Form, Detail, Landing } from "./views/index";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import Navbar from "./components/NavBar/NavBar";
+import axios from "axios"
+axios.defaults.baseURL = "https://pi-pokemons-deploy-production.up.railway.app/"
 
 function App() {
   const location = useLocation();
