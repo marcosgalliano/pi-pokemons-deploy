@@ -41,7 +41,7 @@ const Form = () => {
 
     const fetchTypes = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/types/");
+        const response = await axios.get("/types/");
         // Extraer el array de tipos de la respuesta del servidor
         const typesArray = response.data;
         console.log(typesArray);
@@ -134,7 +134,7 @@ const Form = () => {
 
     // HACE LA PETICION POST Y PASA POR BODY EL ESTADO FORMDATA
     try {
-      await axios.post("http://localhost:3001/pokemons/", {
+      await axios.post("/pokemons/", {
         ...formData,
         types: typesArray,
       });

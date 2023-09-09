@@ -26,7 +26,7 @@ const Navbar = () => {
     // USAMOS USEEFFECT PARA CONSEGUIR LOS TYPES
     const fetchTypes = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/types/");
+        const response = await axios.get("/types/");
         const typesArray = response.data;
         setTypesData(typesArray);
       } catch (error) {

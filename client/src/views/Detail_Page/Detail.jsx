@@ -12,7 +12,7 @@ const Detail = () => {
   const [loading, setLoading] = useState(true);                                 // CONESTE ESTADO SABEMOS SI TODAVIA SE ESTA HACEINDO LA PETICION O NO
 
   useEffect(() => {
-    axios(`http://localhost:3001/pokemons/${id}`).then(({ data }) => {
+    axios(`/pokemons/${id}`).then(({ data }) => {
       if (data.name) {
         setCharacter(data);                                                      // SETEAMOS EL POKEMON EN CHARACTER
       }

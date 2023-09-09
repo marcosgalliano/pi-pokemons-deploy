@@ -16,7 +16,7 @@ export const SET_PAGE = "SET_PAGE";
 export const getPokemons = () => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get(`http://localhost:3001/pokemons/`);
+      const apiData = await axios.get(`/pokemons/`);
 
       const myApiPokemon = apiData.data;
       dispatch({ type: GET_POKEMONS, payload: myApiPokemon });
@@ -32,7 +32,7 @@ export const getPokemonByName = (name) => {
   return async function (dispatch) {
     try {
       const apiData = await axios.get(
-        `http://localhost:3001/pokemons?name=${name}`
+        `/pokemons?name=${name}`
       );
 
       const poke = apiData.data;
