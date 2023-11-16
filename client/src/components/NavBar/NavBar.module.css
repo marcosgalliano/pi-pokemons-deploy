@@ -239,7 +239,7 @@
 }
 
 .dropDown.active .option {
-    display:flex;
+    display: flex;
 }
 
 .dropDown .option div {
@@ -257,4 +257,191 @@
 .dropDown .option div:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+@media screen and (max-width:900px) {
+    .separador {
+        min-height: 300px;
+    }
+
+    .navBarDiv {
+        height: 100%;
+    }
+
+    /* HENRY POKEMONS DIV */
+
+    .henryPokemonsDiv {
+        height: 50px;
+        width: 300px;
+        background-color: black;
+        color: yellow;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid greenyellow;
+        border-radius: 16px;
+        margin-left: 20px;
+        position: relative;
+        z-index: 1;
+        top: 15px;
+    }
+
+    .henryPokemonsDiv h1 {
+        font-size: 20px;
+        position: relative;
+        padding-bottom: 4px;
+    }
+
+    .henryPokemonsDiv h1::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 2px;
+        background-color: greenyellow;
+        top: 100%;
+        left: 10%;
+    }
+
+    .henryPokemonsDiv button {
+        background-color: black;
+        height: 35px;
+        width: 35px;
+        border-radius: 16px;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    .henryPokemonsDiv button a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* search and filters */
+
+    .searchAndFilters {
+        height: 100%;
+        width: 98%;
+        background-color: rgba(0, 0, 0, 0.182);
+        border-radius: 16px;
+        margin: 0 auto 0 auto;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchBar {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* Filters */
+
+    .filtrosYordenDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .filtrosDiv {
+        height: 150px;
+        width: 190px;
+        background-color: rgb(11, 11, 11);
+        border-radius: 16px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .filtrosDiv h2 {
+        font-size: 18px;
+    }
+
+    .ordenDiv {
+        width: 190px;
+        height: 150px;
+        background-color: rgb(11, 11, 11);
+        border-radius: 16px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ordenDiv h2 {
+        font-size: 18px;
+    }
+
+    /* Estilos de botones */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .button {
+        padding: 5px 10px;
+        margin: 5px;
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .button:disabled {
+        cursor: not-allowed;
+    }
+
+    .buttonActive {
+        padding: 5px 10px;
+        margin: 5px;
+        background-color: yellow;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 15px;
+        font-weight: bolder;
+        border: 1px solid rgb(157, 244, 255);
+    }
+
+    /* SUBMIT BUTTONS */
+
+    .submitButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(103, 103, 103, 0.222);
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 16px;
+    }
+
+    .submitButtons button {
+        border: 1px solid yellow;
+        padding: 8px;
+        background-color: black;
+        border-radius: 16px;
+        color: yellow;
+        font-size: 22px;
+        cursor: pointer;
+    }
 }

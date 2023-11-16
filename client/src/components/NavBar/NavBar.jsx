@@ -245,7 +245,7 @@ const Navbar = () => {
             </div>
             <div className={style.submitButtons}>
               <div className={style.submitButtonDiv}>
-                <button onClick={applyFilters}>Aplicar Filtros</button>{" "}
+                <button onClick={applyFilters}>Aplicar Filtros</button>
                 {/* EJECUTAMOS LA FUNCION APPLY FILTERS */}
               </div>
               <div className={style.deleteFiltersButtonDiv}>
